@@ -11,7 +11,7 @@ const Home = () => {
   const [selectedChat, setSelectedChat] = useState(null);
 
   return (
-    <Box sx={{ flexGrow: 1, mt: 1 }}>
+    <Box sx={{ flexGrow: 1, mt: 2 }}>
       <Grid container>
         <Grid xs={4}>
           <SideBar />

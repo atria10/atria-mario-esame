@@ -1,7 +1,7 @@
 import { Grid } from "@nextui-org/react";
-import ChatIcon from '@mui/icons-material/Chat';
 import DataUsageIcon from '@mui/icons-material/DataUsage';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import NewChat from "./NewChat/NewChat";
 
 const Actions=()=> {
   return (
@@ -10,7 +10,7 @@ const Actions=()=> {
         <DataUsageIcon/>
       </Grid>
       <Grid xs={4}>
-      <ChatIcon/>
+        <NewChat/>
       </Grid>
       <Grid xs={4}>
       <MoreVertIcon/>
