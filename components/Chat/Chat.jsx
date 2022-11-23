@@ -12,9 +12,9 @@ const Chat = ({ selectedChat }) => {
         <Card css={{ p: "$6", minHeight: "97vh", position: "fixed",width:'67%' }}>
           <Header name={selectedChat.name} picture={selectedChat.picture} />
           <Card.Divider />
-          <Body />
+          <Body lastChat={selectedChat.lastChat} time={selectedChat.latest_timestamp} />
           <Card.Divider />
-          <Footer />
+          <Footer to={selectedChat.name}/>
         </Card>
       ) : (
         <NoChatSelected/>

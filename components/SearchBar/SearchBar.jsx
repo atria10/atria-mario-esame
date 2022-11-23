@@ -10,6 +10,7 @@ const SearchBar = () => {
           clearable
           contentLeft={<SearchIcon size={16} />}
           contentLeftStyling={false}
+          label=" "
           css={{
             w: "100%",
             "@xsMax": {
