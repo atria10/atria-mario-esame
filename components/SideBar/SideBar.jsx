@@ -10,7 +10,7 @@ const SideBar=()=> {
   return (
     <Card>
       <Card.Header css={{d:'flex', justifyContent:'space-between'}}>
-        <Avatar picture={data.picture}/>
+        <Avatar picture={data.picture} name={data.name}/>
         <Actions/>
       </Card.Header>
       <Card.Divider />
