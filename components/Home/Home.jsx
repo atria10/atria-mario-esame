@@ -1,10 +1,11 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import SideBar from '../SideBar/SideBar';
 import SearchBar from '../SearchBar/SearchBar';
 import ChatList from '../ChatList/ChatList';
 import Chat from '../Chat/Chat';
+import { getPersonalInfo } from '../../helpers/getPersonalInfo';
 
 const Home=()=> {
   return (

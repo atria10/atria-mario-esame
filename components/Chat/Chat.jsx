@@ -1,20 +1,18 @@
-import { Card, Text } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
+import Body from "./Body/Body";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 
-const Chat=()=> {
+const Chat = () => {
   return (
-    <Card css={{ p: "$6", }}>
-      <Header/>
+    <Card css={{ p: "$6",height:'95vh' }}>
+      <Header />
       <Card.Divider />
-      <Card.Body css={{ py: "$2" }}>
-        <Text>
-          Make beautiful websites regardless of your design experience.
-        </Text>
-      </Card.Body>
-      <Footer/>
+      <Body />
+      <Card.Divider />
+      <Footer />
     </Card>
   );
-}
+};
 
 export default Chat;

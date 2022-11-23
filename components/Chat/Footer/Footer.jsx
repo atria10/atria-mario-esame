@@ -1,17 +1,25 @@
-import React from "react";
-import { Card,Link } from "@nextui-org/react";
+import { Card, Grid, Input, Row } from "@nextui-org/react";
+import InsertEmoticonOutlinedIcon from "@mui/icons-material/InsertEmoticonOutlined";
+import AttachFileOutlinedIcon from "@mui/icons-material/AttachFileOutlined";
+import MicOutlinedIcon from "@mui/icons-material/MicOutlined";
 
 const Footer = () => {
   return (
-    <Card.Footer>
-      <Link
-        icon
-        color="primary"
-        target="_blank"
-        href="https://github.com/nextui-org/nextui"
-      >
-        Visit source code on GitHub.
-      </Link>
+    <Card.Footer css={{ height:'10%'}}>
+      <Grid.Container gap={2} justify="center" alignItems='center'>
+        <Grid xs={1}>
+          <Row justify="space-between">
+            <InsertEmoticonOutlinedIcon />
+            <AttachFileOutlinedIcon />
+          </Row>
+        </Grid>
+        <Grid xs={10}>
+          <Input fullWidth placeholder="Write a message" />
+        </Grid>
+        <Grid xs={1}>
+          <MicOutlinedIcon />
+        </Grid>
+      </Grid.Container>
     </Card.Footer>
   );
 };

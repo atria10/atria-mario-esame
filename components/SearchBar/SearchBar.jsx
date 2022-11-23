@@ -4,7 +4,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 
 const SearchBar = () => {
   return (
-    <Grid.Container gap={2} justify="center" css={{mx:'auto',alignItems:'center'} }>
+    <Grid.Container gap={2} justify="center" alignItems='center' css={{mx:'auto'} }>
       <Grid xs={10}>
         <Input
           clearable
