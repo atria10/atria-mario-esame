@@ -4,6 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import SideBar from '../SideBar/SideBar';
 import SearchBar from '../SearchBar/SearchBar';
 import ChatList from '../ChatList/ChatList';
+import Chat from '../Chat/Chat';
 
 const Home=()=> {
   return (
@@ -15,7 +16,7 @@ const Home=()=> {
           <ChatList/>
         </Grid>
         <Grid xs={8}>
-          <div>chat</div>
+          <Chat/>
         </Grid>
       </Grid>
     </Box>

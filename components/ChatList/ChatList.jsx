@@ -187,7 +187,7 @@ const ChatList = () => {
               <User
                 src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                 size="lg"
-              ></User>
+              />
             </Grid>
             <Grid xs={8} css={{ display: "flex", flexDirection: "column" }}>
               <Text b>Name</Text>
